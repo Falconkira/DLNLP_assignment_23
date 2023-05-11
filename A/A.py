@@ -224,7 +224,6 @@ def createLSTM(train, val, test):
         train_dataset, val_dataset, test_dataset: preprocssed dataset for training and testing
     """
     #LSTM
-    #acc: 0.6415556159912973 precision: 0.6104462871047702 recall: 0.6415556159912973 loss: 0.8147903
     # Tokenize the text and convert to sequences
     tokenizer = Tokenizer(num_words=10000)
     tokenizer.fit_on_texts(train["discourse_text"])
